@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
+import './App.css';
 
 const App = () => {
 
@@ -15,7 +16,7 @@ const App = () => {
 
   }, [client]);
 
-  return <div>My Snippyly App</div>;
+  return <div className="app-container">My Snippyly App</div>;
 };
 
 export default App;
