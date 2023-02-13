@@ -39,6 +39,7 @@
   "devDependencies": {
     "@snippyly/types": "^1.0.82",
     "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.10"
+    "@types/react-dom": "^18.0.10",
+    "typescript-plugin-css-modules": "^4.1.1"
   }
 }
