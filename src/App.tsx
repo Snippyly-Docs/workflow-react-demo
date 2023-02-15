@@ -3,6 +3,15 @@ import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
+import Grid from './components/grid/Grid';
+
+import PencilIcon from './icons/pencil.svg';
+import MegaphoneIcon from './icons/megaphone.svg';
+import PieIcon from './icons/pie.svg';
+import GridIcon from './icons/grid.svg';
+import SearchIcon from './icons/search.svg';
+import SettingsIcon from './icons/settings.svg';
+
 const App = () => {
 
   const { client } = useSnippylyClient();
@@ -16,7 +25,25 @@ const App = () => {
 
   }, [client]);
 
-  return <div className={styles['app-container']}>My Snippyly App</div>;
+  return (
+    <div className={styles['app-container']}>
+      <div className={styles['navbar']}>
+        <div className={styles['top-navbar']}>
+          <div className={styles['avatar']} />
+          <img src={PencilIcon} />
+          <img src={MegaphoneIcon} />
+          <img src={PieIcon} />
+          <img src={GridIcon} />
+          <img src={SearchIcon} />
+        </div>
+        <img className={styles['settings']} src={SettingsIcon} />
+      </div>
+      <div className={styles['main-window']}>
+        <div className={styles['topbar']}></div>
+        <Grid />
+      </div>
+    </div>
+  );
 };
 
 export default App;

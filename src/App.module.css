@@ -1,3 +1,53 @@
 .app-container {
   font-family: Poppins !important;
+  display: flex;
+  width: 100%;
 }
+
+.navbar {
+  z-index: 1;
+  width: 5.6vw;
+  /* height: 100%; */
+  background-color: #141416;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7.8vh;
+}
+
+.settings {
+  margin-bottom: 2.9vh;
+}
+
+.avatar {
+  margin-top: 2.9vh;
+  height: 2vw;
+  width: 2vw;
+  background-color: #0DCF82;
+  border-radius: 50%;
+}
+
+
+
+.main-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  width: 100%;
+  height: 12.3vh;
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+}
+
