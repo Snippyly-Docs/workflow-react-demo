@@ -1,0 +1,37 @@
+.panel-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4vh;
+  background-color: #FCFCFD;
+  border: 1px solid #D4D6DF;
+  border-radius: 12px;
+  left: 55%;
+  top: 30%;
+  padding: 1.9vw 2.9vh;
+}
+
+.panel-container > p {
+  margin: 0;
+}
+
+.panel-header {
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.section-header, .panel-item > p {
+  font-size: 1vw;
+}
+
+.panel-item {
+  display: flex;
+  align-items: center;
+}
+
+.panel-item > p {
+  color: #777E90;
+  margin: 0;
+  font-size: 1vw;
+  margin-left: 0.5vw;
+}

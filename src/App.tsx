@@ -4,6 +4,8 @@ import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
 import Grid from './components/grid/Grid';
+import Diagram from './components/diagram/Diagram';
+import Panel from './components/panel/Panel';
 
 import PencilIcon from './icons/pencil.svg';
 import MegaphoneIcon from './icons/megaphone.svg';
@@ -41,6 +43,8 @@ const App = () => {
       <div className={styles['main-window']}>
         <div className={styles['topbar']}></div>
         <Grid />
+        <Diagram />
+        <Panel />
       </div>
     </div>
   );
