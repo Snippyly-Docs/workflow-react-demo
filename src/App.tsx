@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSnippylyClient } from '@snippyly/react';
+import { SnippylyPresence, useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
@@ -24,6 +24,7 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
+    client.setDocumentId('workflow-react-demo');
 
   }, [client]);
 
@@ -41,7 +42,9 @@ const App = () => {
         <img className={styles['settings']} src={SettingsIcon} />
       </div>
       <div className={styles['main-window']}>
-        <div className={styles['topbar']}></div>
+        <div className={styles['topbar']}>
+          <SnippylyPresence />
+        </div>
         <Grid />
         <Diagram />
         <Panel />

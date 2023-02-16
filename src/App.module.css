@@ -42,10 +42,15 @@
 }
 
 .topbar {
-  width: calc(100vw - 5.6vw);
+  width: calc(100vw - 8.1vw);
   height: 12.3vh;
   z-index: 1;
   position: absolute;
   background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  left: 5.6vw;
+  right: 2.5vw;
 }
 
