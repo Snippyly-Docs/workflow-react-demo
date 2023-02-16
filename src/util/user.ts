@@ -22,12 +22,21 @@ function generateEmail(name: string) {
 }
 
 function generateUserData() {
-  const name = generateName();
-  return {
-    userId: generateUserId(),
-    name,
-    email: generateEmail(name)
-  };
+
+  let user: any = window.sessionStorage.getItem('_snippyly_fake_user');
+
+  if (user === null) {
+    const name = generateName();
+    user = {
+      userId: generateUserId(),
+      name,
+      email: generateEmail(name),
+      photoUrl: `https://i.pravatar.cc/150?u=${name}`
+    };
+    window.sessionStorage.setItem('_snippyly_fake_user', user);
+  }
+
+  return user;
 }
 
 export { generateUserData };
