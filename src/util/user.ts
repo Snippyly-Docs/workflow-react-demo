@@ -33,8 +33,8 @@ function generateUserData() {
       email: generateEmail(name),
       photoUrl: `https://i.pravatar.cc/150?u=${name}`
     };
-    window.sessionStorage.setItem('_snippyly_fake_user', user);
-  }
+    window.sessionStorage.setItem('_snippyly_fake_user', JSON.stringify(user));
+  } else user = JSON.parse(user);
 
   return user;
 }
