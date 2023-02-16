@@ -27,7 +27,7 @@ function generateUserData() {
     userId: generateUserId(),
     name,
     email: generateEmail(name),
-    photoUrl: 'https://i.pravatar.cc/300'
+    photoUrl: `https://i.pravatar.cc/150?u=${name}`
   };
 }
 
