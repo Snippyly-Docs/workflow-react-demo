@@ -32,7 +32,14 @@ function generateUserData() {
       name,
       email: generateEmail(name),
       photoUrl: `https://i.pravatar.cc/150?u=${name}`,
-      groupId: 0
+      contacts: [
+        {
+          userId: generateUserId(),
+          name: 'Michael Scott',
+          email: 'michael@dundermifflin.com',
+          photoUrl: 'https://cdn.costumewall.com/wp-content/uploads/2018/09/prison-mike.webp'
+        }
+      ]
     };
     window.sessionStorage.setItem('_snippyly_fake_user', JSON.stringify(user));
   } else user = JSON.parse(user);
