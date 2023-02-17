@@ -4,22 +4,14 @@ This repo serves as a template for a basic setup of React v18 + TS created with 
 
 ## Code Examples
 
-You can view **Snippyly** specific code examples by searching for:
-
-```
-/**
- * Snippyly Code Example
- */
-```
-
-in your IDE. For example if you use **VS Code**, use the following:
+You can view **Snippyly** specific code examples by searching for `Snippyly Code Example` in your IDE. For example if you use **VS Code**, use the following:
 
 ### Windows + Linux
 
-<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>f</kbd>
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
 
 ### OSX
 
-<kbd>command</kbd>+<kbd>shift</kbd>+<kbd>f</kbd>
+<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>
 
 and search for the term: `Snippyly Code Example`.
