@@ -27,6 +27,10 @@ function generateUserData() {
 
   if (user === null) {
     const name = generateName();
+    /**
+     * Snippyly Code Example
+     * Here we define the user that we pass to Snippyly.
+     */
     user = {
       userId: generateUserId(),
       name,
