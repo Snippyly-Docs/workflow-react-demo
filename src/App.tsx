@@ -16,6 +16,10 @@ import SettingsIcon from './icons/settings.svg';
 
 const App = () => {
 
+  /**
+   * Snippyly Code Example
+   * Initializes the Snippyly SDK.
+   */
   const { client } = useSnippylyClient();
 
   useEffect(() => {
@@ -43,6 +47,10 @@ const App = () => {
       </div>
       <div className={styles['main-window']}>
         <div className={styles['topbar']}>
+          {/**
+           * Snippyly Code Example
+           * Feature: Presence
+           */}
           <SnippylyPresence />
         </div>
         <Grid />
