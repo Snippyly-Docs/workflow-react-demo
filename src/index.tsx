@@ -7,7 +7,7 @@ const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
   <React.StrictMode>
-    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+    <SnippylyProvider apiKey="K0klwhmHHauN8GMHDbch">
       {/**
        * Snippyly Code Example
        * Feature: Live Cursors

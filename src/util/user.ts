@@ -18,7 +18,7 @@ function generateName() {
 }
 
 function generateEmail(name: string) {
-  return `${name.replace(' ', '.').toLowerCase()}@email.com`;
+  return `${name.replace(' ', '.').toLowerCase()}@dundermifflin.com`;
 }
 
 function generateUserData() {
