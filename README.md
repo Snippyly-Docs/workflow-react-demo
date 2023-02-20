@@ -6,6 +6,11 @@ This is an example Workflow Builder React demo with **Snippyly** SDK features.
 
 - Presence
 - Live Cursors
+- Huddle
+- Comments
+- Comments Sidebar
+- Tags
+- Recorder
 
 ## Code Examples
 

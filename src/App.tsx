@@ -1,5 +1,12 @@
 import { useEffect } from "react";
-import { SnippylyPresence, useSnippylyClient } from '@snippyly/react';
+import { 
+  SnippylyPresence, 
+  useSnippylyClient,
+  SnippylyHuddleTool,
+  SnippylyRecorderTool,
+  SnippylyCommentTool,
+  SnippylyTagTool
+} from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
@@ -51,6 +58,10 @@ const App = () => {
            * Snippyly Code Example
            * Feature: Presence
            */}
+          <SnippylyCommentTool />
+          <SnippylyTagTool />
+          <SnippylyHuddleTool type="all" />
+          <SnippylyRecorderTool type="all" />
           <SnippylyPresence />
         </div>
         <Grid />

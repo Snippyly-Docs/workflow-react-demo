@@ -50,7 +50,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 1.2vw;
   left: 5.6vw;
   right: 2.5vw;
+}
+
+snippyly-tag-tool, snippyly-comment-tool {
+  margin-top: 0.5vh;
 }
 
