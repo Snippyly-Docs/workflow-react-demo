@@ -7,7 +7,7 @@ const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
   <React.StrictMode>
-    <SnippylyProvider apiKey="K0klwhmHHauN8GMHDbch">
+    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
       <App />
     </SnippylyProvider>
   </React.StrictMode>
