@@ -18,7 +18,7 @@ function generateName() {
 }
 
 function generateEmail(name: string) {
-  return `${name.replace(' ', '.').toLowerCase()}@dundermifflin.com`;
+  return `${name.replace(' ', '.').toLowerCase()}@trysnippyly.com`;
 }
 
 function generateUserData() {
@@ -30,17 +30,25 @@ function generateUserData() {
     /**
      * Snippyly Code Example
      * Here we define the user that we pass to Snippyly.
+     * 
+     * The group ID is particularly important as it
+     * allows users in the same group to tag eachother.
+     * 
+     * Providing a contacts array does the same,
+     * but effectively manually adds users to the user's contacts list.
+     * 
      */
     user = {
       userId: generateUserId(),
       name,
       email: generateEmail(name),
       photoUrl: `https://i.pravatar.cc/150?u=${name}`,
+      groupId: 'demo-group',
       contacts: [
         {
           userId: generateUserId(),
           name: 'Michael Scott',
-          email: 'michael@dundermifflin.com',
+          email: 'michael@trysnippyly.com',
           photoUrl: 'https://cdn.costumewall.com/wp-content/uploads/2018/09/prison-mike.webp'
         }
       ]
