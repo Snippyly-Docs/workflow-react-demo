@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/workflow-react-demo/static/css/main.08fc818b.css",
+    "main.js": "/workflow-react-demo/static/js/main.5502ce98.js",
+    "static/media/grid.svg": "/workflow-react-demo/static/media/grid.f72030473c62636add654bd34aa063f3.svg",
+    "static/media/clipboard-list.svg": "/workflow-react-demo/static/media/clipboard-list.f1bd4b176a66cbedba8080217beab010.svg",
+    "static/media/megaphone.svg": "/workflow-react-demo/static/media/megaphone.ac91723ebf8ca0cfffa2fb71a41ae847.svg",
+    "static/media/settings.svg": "/workflow-react-demo/static/media/settings.3138d7a0a4e5695fb91db8ad1cc1fe5d.svg",
+    "static/media/split.svg": "/workflow-react-demo/static/media/split.6a467b5b280b112d57430a25dcf2e89f.svg",
+    "static/media/shopping-cart.svg": "/workflow-react-demo/static/media/shopping-cart.c8a417c8514923db412821e1953e39f2.svg",
+    "index.html": "/workflow-react-demo/index.html",
+    "static/media/pencil.svg": "/workflow-react-demo/static/media/pencil.6d102e32a2b5c84ba2b81bff532bd468.svg",
+    "static/media/pie.svg": "/workflow-react-demo/static/media/pie.139e8255e6a1e4f5d4f587b65ed05345.svg",
+    "static/media/search.svg": "/workflow-react-demo/static/media/search.3d44f7144571a91634453f90c7206774.svg",
+    "static/media/email.svg": "/workflow-react-demo/static/media/email.04ec8fc8a9503a71451e4b329c7497ab.svg",
+    "static/media/email-grey.svg": "/workflow-react-demo/static/media/email-grey.4f932db42ebe8577001caed059a6b2dc.svg",
+    "static/media/clock.svg": "/workflow-react-demo/static/media/clock.5d2dc8c2cef8c9289d3e6cbccbe3e64b.svg",
+    "static/media/clock-grey.svg": "/workflow-react-demo/static/media/clock-grey.d3df4c35b3c2f2dcdc1b94d80050814d.svg",
+    "main.08fc818b.css.map": "/workflow-react-demo/static/css/main.08fc818b.css.map",
+    "main.5502ce98.js.map": "/workflow-react-demo/static/js/main.5502ce98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08fc818b.css",
+    "static/js/main.5502ce98.js"
+  ]
+}
