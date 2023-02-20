@@ -2,6 +2,7 @@
   "name": "workflow-react-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://snippyly-docs.github.io/workflow-react-demo",
   "dependencies": {
     "@snippyly/react": "^1.0.21",
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +15,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +44,7 @@
     "@snippyly/types": "^1.0.82",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
+    "gh-pages": "^5.0.0",
     "typescript-plugin-css-modules": "^4.1.1"
   }
 }
