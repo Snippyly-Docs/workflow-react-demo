@@ -1,7 +1,7 @@
 
 
-const FirstNames = ['Troy', 'Abed', 'Patrick', 'Sandy', 'Pearl', 'Spongebob', 'Ross', 'Rachel'];
-const LastNames = ['Cheeks', 'Krabs', 'Squarepants', 'Tentacles', 'Smith', 'Johnson', 'Davis'];
+const FirstNames = ['Troy', 'Abed', 'Patrick', 'Sandy', 'Pearl', 'Spongebob', 'Ross', 'Rachel', 'Rick', 'Morty', 'Summer', 'Jerry', 'Beth', 'Mickey', 'Daffy', 'Bugs'];
+const LastNames = ['Cheeks', 'Krabs', 'Squarepants', 'Tentacles', 'Smith', 'Johnson', 'Davis', 'Vanderpump', 'Boop', 'Duck', 'Mouse', 'Bunny', 'Garfield', 'the Platypus', 'the Menace'];
 
 function s4() {
   return Math.floor((1 + Math.random()) * 0x10000)
@@ -18,7 +18,7 @@ function generateName() {
 }
 
 function generateEmail(name: string) {
-  return `${name.replace(' ', '.').toLowerCase()}@dundermifflin.com`;
+  return `${name.replace(' ', '.').toLowerCase()}@trysnippyly.com`;
 }
 
 function generateUserData() {
@@ -30,17 +30,25 @@ function generateUserData() {
     /**
      * Snippyly Code Example
      * Here we define the user that we pass to Snippyly.
+     * 
+     * The group ID is particularly important as it
+     * allows users in the same group to tag eachother.
+     * 
+     * Providing a contacts array does the same,
+     * but effectively manually adds users to the user's contacts list.
+     * 
      */
     user = {
-      userId: generateUserId(),
+      userId: btoa(name),
       name,
       email: generateEmail(name),
-      photoUrl: `https://i.pravatar.cc/150?u=${name}`,
+      photoUrl: `https://i.pravatar.cc/150?u=${name}.png`,
+      groupId: 'demogroup',
       contacts: [
         {
-          userId: generateUserId(),
+          userId: btoa('Michael Scott'),
           name: 'Michael Scott',
-          email: 'michael@dundermifflin.com',
+          email: 'michael@trysnippyly.com',
           photoUrl: 'https://cdn.costumewall.com/wp-content/uploads/2018/09/prison-mike.webp'
         }
       ]
