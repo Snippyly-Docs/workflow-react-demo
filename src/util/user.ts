@@ -38,11 +38,13 @@ function generateUserData() {
      * but effectively manually adds users to the user's contacts list.
      * 
      */
+    const email = generateEmail(name);
+    const userId = btoa(name);
     user = {
-      userId: btoa(name),
+      userId,
       name,
-      email: generateEmail(name),
-      photoUrl: `https://i.pravatar.cc/150?u=${name}.png`,
+      email,
+      photoUrl: `https://i.pravatar.cc/150?u=${userId}.png`,
       groupId: 'demogroup',
       contacts: [
         {
