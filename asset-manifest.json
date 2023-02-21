@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/workflow-react-demo/static/css/main.08fc818b.css",
-    "main.js": "/workflow-react-demo/static/js/main.5502ce98.js",
+    "main.js": "/workflow-react-demo/static/js/main.67d60bc3.js",
     "static/media/grid.svg": "/workflow-react-demo/static/media/grid.f72030473c62636add654bd34aa063f3.svg",
     "static/media/clipboard-list.svg": "/workflow-react-demo/static/media/clipboard-list.f1bd4b176a66cbedba8080217beab010.svg",
     "static/media/megaphone.svg": "/workflow-react-demo/static/media/megaphone.ac91723ebf8ca0cfffa2fb71a41ae847.svg",
@@ -17,10 +17,10 @@
     "static/media/clock.svg": "/workflow-react-demo/static/media/clock.5d2dc8c2cef8c9289d3e6cbccbe3e64b.svg",
     "static/media/clock-grey.svg": "/workflow-react-demo/static/media/clock-grey.d3df4c35b3c2f2dcdc1b94d80050814d.svg",
     "main.08fc818b.css.map": "/workflow-react-demo/static/css/main.08fc818b.css.map",
-    "main.5502ce98.js.map": "/workflow-react-demo/static/js/main.5502ce98.js.map"
+    "main.67d60bc3.js.map": "/workflow-react-demo/static/js/main.67d60bc3.js.map"
   },
   "entrypoints": [
     "static/css/main.08fc818b.css",
-    "static/js/main.5502ce98.js"
+    "static/js/main.67d60bc3.js"
   ]
 }
