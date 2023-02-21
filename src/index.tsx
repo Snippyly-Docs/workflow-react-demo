@@ -1,8 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { 
-  SnippylyProvider, 
+import {
+  SnippylyProvider,
   SnippylyCursor,
   SnippylyComments,
   SnippylyHuddle,
@@ -15,9 +15,8 @@ import {
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer as HTMLElement);
 root.render(
-  <React.StrictMode>
-    <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
-      {/**
+  <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+    {/**
        * Snippyly Code Example
        * Feature: Live Cursors
        * Feature: Huddle -- Step #1
@@ -26,14 +25,13 @@ root.render(
        * Feature: Comments Sidebar -- Step #1
        * Feature: Tags -- Step #1
        */}
-      <SnippylyCursor />
-      <SnippylyComments />
-      <SnippylyHuddle />
-      <SnippylyRecorderControlPanel />
-      <SnippylyRecorderNotes />
-      <SnippylyCommentsSidebar />
-      <SnippylyTags />
-      <App />
-    </SnippylyProvider>
-  </React.StrictMode>
+    <SnippylyCursor />
+    <SnippylyComments />
+    <SnippylyHuddle />
+    <SnippylyRecorderControlPanel />
+    <SnippylyRecorderNotes />
+    <SnippylyCommentsSidebar />
+    <SnippylyTags />
+    <App />
+  </SnippylyProvider>
 );
