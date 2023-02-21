@@ -9,20 +9,18 @@ const App = () => {
 
     const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
 
-    return () => {
-      if (isDataReset === null) {
-        fetch(
-          "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
-          {
-            headers: { "Content-Type": "application/json" },
-            method: "POST",
-            body: JSON.stringify({ documentId: '' }),
-          }
-        );
-        window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
-      }
-
+    if (isDataReset === null) {
+      fetch(
+        "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
+        {
+          headers: { "Content-Type": "application/json" },
+          method: "POST",
+          body: JSON.stringify({ documentId: '' }),
+        }
+      );
+      window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
     }
+    
   }, []);
 
   /**
