@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { 
-  SnippylyPresence, 
-  useSnippylyClient,
-  SnippylyHuddleTool,
-  SnippylyRecorderTool,
-  SnippylyCommentTool,
-  SnippylyTagTool
-} from '@snippyly/react';
+  VeltPresence, 
+  useVeltClient,
+  VeltHuddleTool,
+  VeltRecorderTool,
+  VeltCommentTool,
+  VeltTagTool
+} from '@veltdev/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
 
@@ -24,10 +24,10 @@ import SettingsIcon from './icons/settings.svg';
 const App = () => {
 
   /**
-   * Snippyly Code Example
-   * Initializes the Snippyly SDK.
+   * Velt Code Example
+   * Initializes the Velt SDK.
    */
-  const { client } = useSnippylyClient();
+  const { client } = useVeltClient();
 
   useEffect(() => {
 
@@ -43,7 +43,7 @@ const App = () => {
 
     if (!client) return;
 
-    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe(users => {
+    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe((users: any) => {
       if (users === null) return;
       if (users.length === 0) {
         const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
@@ -80,14 +80,14 @@ const App = () => {
       <div className={styles['main-window']}>
         <div className={styles['topbar']}>
           {/**
-           * Snippyly Code Example
+           * Velt Code Example
            * Feature: Presence
            */}
-          <SnippylyCommentTool />
-          <SnippylyTagTool />
-          <SnippylyHuddleTool type="all" />
-          <SnippylyRecorderTool type="all" />
-          <SnippylyPresence />
+          <VeltCommentTool />
+          <VeltTagTool />
+          <VeltHuddleTool type="all" />
+          <VeltRecorderTool type="all" />
+          <VeltPresence />
         </div>
         <Grid />
         <Diagram />

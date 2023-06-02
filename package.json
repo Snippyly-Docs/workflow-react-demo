@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://snippyly-docs.github.io/workflow-react-demo",
   "dependencies": {
-    "@snippyly/react": "^1.0.21",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@veltdev/react": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
@@ -41,9 +41,9 @@
     ]
   },
   "devDependencies": {
-    "@snippyly/types": "^1.0.82",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.10",
+    "@veltdev/types": "^1.0.2",
     "gh-pages": "^5.0.0",
     "typescript-plugin-css-modules": "^4.1.1"
   }
